@@ -25,6 +25,11 @@ public final class AttributeTest extends ITest {
     $("#domain-container").shouldHave(attribute("class"));
     $("#domain-container").shouldNotHave(attribute("foo"));
   }
+  @Test
+  void canVerifyAttributeExistenceSecond() {
+    $("#domain-container").shouldHave(attribute("class"));
+    $("#domain-container").shouldNotHave(attribute("foo"));
+  }
 
   @Test
   void canVerifyAttributeValue() {
